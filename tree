@@ -1,0 +1,24 @@
+package tree;
+
+public class Tree {
+	private float height;
+	public void setheight(float sheight) {
+		if(sheight<=0)
+			System.out	.println("输入错误，请重新输入");
+		else
+			height=sheight;
+	}
+	private float Height() {
+		return height;
+	}
+	public String getheight() {
+		String state;
+		if(Height()<0.2)
+			state="幼苗";
+		else if(Height()>=5)
+			state="大树";
+		else
+			state="小树";
+		return state;
+	}
+}
